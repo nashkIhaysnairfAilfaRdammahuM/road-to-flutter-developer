@@ -1,0 +1,185 @@
+Introduction to Dart
+    Open Source
+        https://github.com/dart-lang
+    General Purpose
+    Developed by Google
+    Was created to replace JavaScript
+    Dart became popular when Google released Flutter, a multi-platform software development framework
+    Dart was released to the public in goto conference 2011, founded by Lars Bak and Kasper Lund
+    Dart 1.0 was released on November 2013
+    Dart 2.0 was released on August 2018
+
+    Why learn Dart?
+        Flexible
+        Open Source
+        Used by Flutter
+        Lots of tools
+        Easy to learn
+
+    Characteristics of Dart
+        Statically Typed
+            The data type of a variable must be defined
+        Type Inference
+            Dart could infer the data type of a variable by using its value
+        String Interpolation
+            You can use a variable inside of a string by adding $ in front of the variable name
+        Multi-Paradigm: OOP & Functional
+
+Dart tools
+    Online IDE
+        https://dartpad.dev/?
+        Lacking plugins
+    Offline IDE
+        Just install Flutter SDK, it will literally solve all your problems
+        https://docs.flutter.dev/get-started/install
+        https://pub.dev
+            Google Fonts
+            intl
+
+Dart Fundamental
+    Comments
+        Comments are really useful for documentation
+        There are three types of comments
+            Single Line Comments
+                //
+
+            Multi Line Comments
+                /* */
+            Documentation Comments
+                /// []
+                /** [] */
+    Variables
+        Must define the data type of a variable, the anatomy of a variable is data_type variable_name = variable_value;
+        A variable that has its data type defined cannot be assigned to a different data type unless the variable was defined without a value
+    Numbers
+        int
+        double
+        toStringAsFixed
+        parse
+    Data Types
+        String
+            "String of characters"
+            int.parse()
+            double.parse()
+            num.parse()
+            Use "" or '', use \ if you need to use quotes inside the string
+            You can concatenate strings with the + operator
+            \u2665, \u is used for Unicode characters
+            You can add r in front of a string (r"string example") to turn it into raw data meaning that you can't escape the string
+        int
+            Mostly used in loops
+            0x1, 0x2, 0x3, 0xn...
+            ..., -3, -2, -1, 0, 1, 2, 3,...
+            .toString()
+            .toStringAsExponential()
+            .toStringAsFixed()
+            .toStringAsPrecision()
+        double
+            Mostly used in Flutter
+            0.0, 0.25, 39.0
+            .ceil()
+            .ceilToDouble()
+            .floor()
+            .floorToDouble()
+            .toString()
+            .toStringAsExponential()
+            .toStringAsFixed()
+            .toStringAsPrecision()
+        num
+            9, 9.0, 7.3, 8
+            .abs()
+            .toString()
+            .toStringAsExponential()
+            .toStringAsFixed()
+            .toStringAsPrecision()
+        List
+            ["data", 23, {'nama': 'yanto'}]
+        Map
+            {'nama': 'yanto'}
+        dynamic
+            everything goes
+        bool
+            true/false
+            !true = false, not true = false
+            !false = true, not false = true
+    Strings
+        Interpolation
+        backslash
+    Booleans
+        true
+        false
+    Operators
+        Assignment Operators
+            =, to assign a value to a variable
+        Arithmetic Operators
+            +, -, /, *, % (modulus), ~/ (is equal to (a/b).truncate().toInt())
+        increment
+            ++, +=
+        decrement
+            --, -=
+        Comparison Operators
+            ==, !=, <, <=, >, >=
+        Logical Operators
+            ||, &&, !
+        parentheses
+    Functions
+        void
+            Functions that dont return a value
+        Function Parameters
+            required
+        Optional Parameters
+            {}, []
+    Exceptions
+        try
+            to try something out
+        on
+            to catch a specific exception
+        catch
+            to catch the exception that occured
+        finally
+            to run a code even with the exception
+    Variable Scope
+        basically, the variable can't be accessed if it can't be "seen"
+    Constants & Final
+        const
+            defined once and can't change the value of the const variable
+        final
+            defined once and can't change the value of the final variable
+        difference between const and final
+            the value of const variables must be initialized once it is defined,
+            meanwhile the value of final variables can be initialized later
+    Null Safety
+        Released on Dart 2.12
+        ?
+            indicates that a variable is nullable
+        !
+            to force that a variable is not null (use wisely!)
+        late
+            to tell that the variable will get initialized later
+    Looping
+        for
+            for(int i = 0; i <= 10; i++) {}
+                int i = 0 is to initialize the index of the loop
+                i <= 10 is to define the requirement for the loop to be executed
+                    the program inside the loop will happen if this statement is true
+                i++ is what to do to the index after the last iteration is finished
+        while
+            while(i <= j) {}
+                (i <= j) is the requirement for the loop to be executed
+                    the program inside the loop will happen if this statement is true
+                    i is the value to be iterated
+                    j is the maximum/minimum of i
+        do while
+            do {} while(i <= j)
+                its the same as while but the program will get executed once even if it doesnt meet the requirement
+        forEach
+        break
+        continue
+    Switch & Case
+    Collections
+        add
+        insert
+        spread collections
+        set
+        remove
+        
