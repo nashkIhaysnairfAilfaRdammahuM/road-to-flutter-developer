@@ -175,7 +175,19 @@ Dart Fundamental
         forEach
         break
         continue
-    Switch & Case
+    Conditional Expression
+        if() {} else if() {} else {}
+            the expression explains it self
+        switch
+            if else statements, simplified
+            case
+                the case for the code to run
+            break
+                to break out of the condition
+            default
+                to be a default if there's no true condition
+        (condtion) ? (if true) : (if false)
+            if else statements, more simplified
     Collections
         add
         insert
