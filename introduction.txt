@@ -189,9 +189,42 @@ Dart Fundamental
         (condtion) ? (if true) : (if false)
             if else statements, more simplified
     Collections
-        add
-        insert
-        spread collections
-        set
-        remove
-        
+        List
+            List<type> list_name = ["list_element1", 2, true]
+            index starts from 0 so list_name[1] would return 2
+            add
+                to add an element to the end of a List
+            addAll
+                to add elements to the end of a List
+            insert
+                to add an element to the specified index of a List
+            insertAll
+                to add elements to the specified index of a List
+            spread collections
+                to extract elements from a List
+            elementAt
+                to get the element of the specified index from a List
+            remove
+                to remove the first specified element found in a List
+            removeAt
+                to remove an element from the specified index of a List
+            removeLast
+                to remove the last element of a List
+            removeRange
+                to remove element/s starting from the specified index until the amount of elements of a List
+        Set
+            Set<type> set_name = {"set_element1", 2, true};
+            elementAt
+                to get the element of a specified index from a set
+            union
+                to get the all the elements from the first set and the second set and turning the same elements into one
+            intersection
+                to get the same elements from the first set and the second set
+        Map
+            Map<String, type> map_name = {"key 1": "element1", "key 2": 2, "key 3": true}
+            keys
+                to get every key of a map
+            values
+                to get every value of a map
+            map_name["key_name"]
+                to get the value of the specified key from a map
