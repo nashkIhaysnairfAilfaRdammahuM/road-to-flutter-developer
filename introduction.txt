@@ -228,3 +228,27 @@ Dart Fundamental
                 to get every value of a map
             map_name["key_name"]
                 to get the value of the specified key from a map
+    OOP (Object Oriented Programming)
+        Structure of OOP
+            Classes
+                a blueprint for an object
+            Objects
+                the object itself
+            Methods
+                what the object can do
+            Attributes
+                what the object has
+        advantages of using OOP
+            Modularity
+            Reusability
+            Productivity
+            Easily upgradable and scalable
+            Interface descriptions
+            Security
+            Flexibility
+        Alternative of OOP
+            Functional programming
+            Structured or modular programming
+            Imperative programming
+            Declarative programming
+            Logical programming
