@@ -1,21 +1,22 @@
-import 'dart:io';
-
-void main() {
-  // var nama;
-  // nama = "panjul";
-  // nama = 20;
-
-  // print(nama);
-
-  int tes = 0xf;
-  print(tes);
-
+void main() async {
   try {
-    1 ~/ 0;
-  } on UnsupportedError catch (e) {
+    String order = await getOrder(6, 'Mocha');
+    print(order);
+  } catch (e) {
     print(e);
   }
+}
 
-  late String? tes2;
-  tes2 = stdin.readLineSync()!;
+Future<String> getOrder(int orderAmount, String orderName) {
+  return Future.delayed(
+    Duration(seconds: 1),
+    () {
+      int stock = 5;
+      if (stock >= orderAmount) {
+        return 'You ordered $orderAmount $orderName';
+      } else {
+        throw 'The stock is unavailable';
+      }
+    },
+  );
 }
